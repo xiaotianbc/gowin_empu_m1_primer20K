@@ -87,7 +87,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Jan 13 00:09:41 2023
+<td>Fri Jan 13 00:23:55 2023
 </td>
 </tr>
 <tr>
@@ -100,11 +100,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Total Power (mW)</td>
-<td>574.008</td>
+<td>573.691</td>
 </tr>
 <tr>
 <td class="label">Quiescent Power (mW)</td>
-<td>169.837</td>
+<td>169.520</td>
 </tr>
 <tr>
 <td class="label">Dynamic Power (mW)</td>
@@ -115,7 +115,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Junction Temperature</td>
-<td>43.380</td>
+<td>43.370</td>
 </tr>
 <tr>
 <td class="label">Theta JA</td>
@@ -123,7 +123,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Max Allowed Ambient Temperature</td>
-<td>66.620</td>
+<td>66.630</td>
 </tr>
 </table>
 <h2><a name="Configure_Info">Configure Information:</a></h2>
@@ -193,8 +193,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>VCC</td>
 <td>1.000</td>
 <td>378.390</td>
-<td>103.885</td>
-<td>482.275</td>
+<td>103.877</td>
+<td>482.267</td>
 </tr>
 <tr>
 <td>VCCX</td>
@@ -211,11 +211,18 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.691</td>
 </tr>
 <tr>
+<td>VCCIO18</td>
+<td>1.800</td>
+<td>0.000</td>
+<td>0.186</td>
+<td>0.334</td>
+</tr>
+<tr>
 <td>VCCIO33</td>
 <td>3.300</td>
 <td>4.245</td>
-<td>2.207</td>
-<td>21.290</td>
+<td>2.012</td>
+<td>20.647</td>
 </tr>
 </table>
 <h1><a name="Detail">Power Details</a></h1>
@@ -235,8 +242,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>IO</td>
-<td>46.357
-<td>15.929
+<td>46.015
+<td>15.587
 <td>12.790
 </tr>
 <tr>
@@ -1435,14 +1442,34 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>277.530</td>
 </tr>
 <tr>
-<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD.default_gen_clk</td>
-<td>3.000</td>
-<td>0.002</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>30.000</td>
+<td>4.613</td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_6</td>
+<td>100.000</td>
+<td>0.041</td>
 </tr>
 <tr>
 <td>RGMII_RXC</td>
 <td>100.000</td>
 <td>54.552</td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_8</td>
+<td>100.000</td>
+<td>0.266</td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_2</td>
+<td>100.000</td>
+<td>0.012</td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_4</td>
+<td>100.000</td>
+<td>0.012</td>
 </tr>
 <tr>
 <td>u_Gowin_rPLL_1/rpll_inst/CLKOUT.default_gen_clk</td>
@@ -1460,29 +1487,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.046</td>
 </tr>
 <tr>
-<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_6</td>
-<td>100.000</td>
-<td>0.041</td>
-</tr>
-<tr>
-<td>u_Gowin_rPLL_2/rpll_inst/CLKOUT.default_gen_clk</td>
-<td>30.000</td>
-<td>4.613</td>
-</tr>
-<tr>
-<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_8</td>
-<td>100.000</td>
-<td>0.266</td>
-</tr>
-<tr>
-<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_4</td>
-<td>100.000</td>
-<td>0.012</td>
-</tr>
-<tr>
-<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_2</td>
-<td>100.000</td>
-<td>0.012</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>3.000</td>
+<td>0.002</td>
 </tr>
 <tr>
 <td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rnd_src</td>
