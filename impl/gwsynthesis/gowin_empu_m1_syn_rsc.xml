@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Gowin_EMPU_M1_template">
+    <SubModule name="u_ahb_multiple" Register="49" Lut="45">
+        <SubModule name="u_multiple" Register="36" Alu="15" Lut="85"/>
+    </SubModule>
+    <SubModule name="multiple_template" Register="34" Lut="36">
+        <SubModule name="multiplier_inst" Register="36" Alu="15" Lut="84"/>
+    </SubModule>
+    <SubModule name="u_Gowin_rPLL_1"/>
+    <SubModule name="your_instance_name"/>
+    <SubModule name="u_Gowin_rPLL_2"/>
+    <SubModule name="u_Gowin_EMPU_M1_Top" Register="7122" Alu="736" Lut="12804" Dsp="1" Bsram="39" Ssram="38"/>
+</Module>

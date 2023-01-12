@@ -1,0 +1,19 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
+    <FileList>
+        <File path="src/ahb_multiple.v" type="file.verilog" enable="1"/>
+        <File path="src/apb2_decoder.v" type="file.verilog" enable="1"/>
+        <File path="src/apb_multiple.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_empu_m1/gowin_empu_m1.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_empu_m1_template.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll_my3.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll_1/gowin_rpll_1.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll_2/gowin_rpll_2.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_empu_m1.cst" type="file.cst" enable="1"/>
+        <File path="src/gowin_empu_m1.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

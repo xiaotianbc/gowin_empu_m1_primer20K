@@ -1,0 +1,44 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/ahb_multiple.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/apb2_decoder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/apb_multiple.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/gowin_empu_m1/gowin_empu_m1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/gowin_empu_m1_template.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/gowin_rpll/gowin_rpll_my3.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/gowin_rpll_1/gowin_rpll_1.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/gowin_projects/gowin_empu_m1_primer20K/src/gowin_rpll_2/gowin_rpll_2.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/gowin_projects/gowin_empu_m1_primer20K/impl/temp/rtl_parser.result",
+ "Top" : "Gowin_EMPU_M1_template",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_2008"
+}

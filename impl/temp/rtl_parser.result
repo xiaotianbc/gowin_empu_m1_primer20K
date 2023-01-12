@@ -1,0 +1,106 @@
+[
+ {
+  "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+  "InstLine" : 4,
+  "InstName" : "Gowin_EMPU_M1_template",
+  "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+  "ModuleLine" : 4,
+  "ModuleName" : "Gowin_EMPU_M1_template",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 144,
+    "InstName" : "u_ahb_multiple",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/ahb_multiple.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "Gowin_AHB_Multiple",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/ahb_multiple.v",
+      "InstLine" : 114,
+      "InstName" : "u_multiple",
+      "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/ahb_multiple.v",
+      "ModuleLine" : 128,
+      "ModuleName" : "Gowin_Multiple"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 179,
+    "InstName" : "multiple_template",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/apb_multiple.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "Gowin_APB2_Multiple",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/apb_multiple.v",
+      "InstLine" : 81,
+      "InstName" : "multiplier_inst",
+      "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/apb_multiple.v",
+      "ModuleLine" : 95,
+      "ModuleName" : "Gowin_Multiplier"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 192,
+    "InstName" : "u_multiple_1",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/apb2_decoder.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "Gowin_APB2_Decoder"
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 209,
+    "InstName" : "u_Gowin_rPLL_1",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_rpll_1/gowin_rpll_1.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_rPLL_1"
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 215,
+    "InstName" : "your_instance_name",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_rpll/gowin_rpll_my3.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_rPLL_my3"
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 223,
+    "InstName" : "u_Gowin_rPLL_2",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_rpll_2/gowin_rpll_2.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_rPLL_2"
+   },
+   {
+    "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1_template.v",
+    "InstLine" : 232,
+    "InstName" : "u_Gowin_EMPU_M1_Top",
+    "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1/gowin_empu_m1.v",
+    "ModuleLine" : 75650,
+    "ModuleName" : "Gowin_EMPU_M1_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1/gowin_empu_m1.v",
+      "InstLine" : 77218,
+      "InstName" : "M1_inst",
+      "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1/gowin_empu_m1.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "CortexM1DbgIntegrationWrapper"
+     },
+     {
+      "InstFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1/gowin_empu_m1.v",
+      "InstLine" : 77328,
+      "InstName" : "u_GowinCM1AhbExtWrapper",
+      "ModuleFile" : "D:/fpag_codes/Gowin_EMPU_M1_V1.6.5/ref_design/FPGA_RefDesign/Debug_RefDesign/DK_START_GW2A18_V2.0/gowin_empu_m1/src/gowin_empu_m1/gowin_empu_m1.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "GowinCM1AhbExtWrapper"
+     }
+    ]
+   }
+  ]
+ }
+]

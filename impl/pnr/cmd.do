@@ -1,0 +1,11 @@
+-d D:\gowin_projects\gowin_empu_m1_primer20K\impl\gwsynthesis\gowin_empu_m1.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1.cst
+-cfg D:\gowin_projects\gowin_empu_m1_primer20K\impl\pnr\device.cfg
+-sdc D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1.sdc
+-bit
+-tr
+-ph
+-timing
+-route_maxfan 23

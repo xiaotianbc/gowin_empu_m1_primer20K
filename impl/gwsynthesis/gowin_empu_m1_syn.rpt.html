@@ -1,0 +1,2735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>D:\gowin_projects\gowin_empu_m1_primer20K\src\ahb_multiple.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\apb2_decoder.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\apb_multiple.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1\gowin_empu_m1.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1_template.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll\gowin_rpll_my3.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll_1\gowin_rpll_1.v<br>
+D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll_2\gowin_rpll_2.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Version</td>
+<td>GowinSynthesis V1.9.8.10</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Fri Jan 13 00:08:30 2023
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2022 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>Gowin_EMPU_M1_template</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 909.789MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.609s, Elapsed time = 0h 0m 0.613s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.474s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.656s, Elapsed time = 0h 0m 0.645s, Peak memory usage = 909.789MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.296s, Elapsed time = 0h 0m 0.298s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.02s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.127s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.032s, Peak memory usage = 909.789MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.312s, Elapsed time = 0h 0m 0.405s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.203s, Elapsed time = 0h 0m 0.21s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.146s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 909.789MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.482s, Peak memory usage = 909.789MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 909.789MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 909.789MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>71</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>189</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>90</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>73</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>26</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>7277</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>351</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>74</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>22</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>74</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>516</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>48</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>359</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>1449</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>4343</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNPE</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNC</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFNCE</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDL</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDLN</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>12981</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>1388</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>3453</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>8140</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>766</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>766</td>
+</tr>
+<tr>
+<td class="label"><b>SSRAM </b></td>
+<td>38</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16S4</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16SDP4</td>
+<td>32</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>73</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>73</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDDR</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspODDR</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label"><b>DSP </b></td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMULT36X36</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>39</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDPB</td>
+<td>32</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>3</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>14048(13054 LUTs, 766 ALUs, 38 SSRAMs) / 20736</td>
+<td>68%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>7277 / 16173</td>
+<td>45%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>2 / 16173</td>
+<td><1%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>7275 / 16173</td>
+<td>45%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>39 / 46</td>
+<td>85%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>HCLK</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.0</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td> </td>
+<td>HCLK_ibuf/I </td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I </td>
+</tr>
+<tr>
+<td>JTAG_9</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/JTAG_9_ibuf/I </td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/RTCSRCCLK_ibuf/I</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/RTCSRCCLK_ibuf/I </td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/SD_SPICLK_ibuf/I</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/SD_SPICLK_ibuf/I </td>
+</tr>
+<tr>
+<td>RGMII_RXC</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/RGMII_RXC_ibuf/I </td>
+</tr>
+<tr>
+<td>u_Gowin_EMPU_M1_Top/GTX_CLK_ibuf/I</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/GTX_CLK_ibuf/I </td>
+</tr>
+<tr>
+<td>rtc_1hz_clk_4</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/rtc_1hz_clk_s1/Q </td>
+</tr>
+<tr>
+<td>rnd_src_div_2</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_2_s0/Q </td>
+</tr>
+<tr>
+<td>rnd_src_div_4</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_4_s0/Q </td>
+</tr>
+<tr>
+<td>rnd_src_div_8</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rng_engine_i/rng_top_i/trng_top_i/trng_sync_i/rnd_src_div_8_s0/Q </td>
+</tr>
+<tr>
+<td>rnd_src</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_gw_apb_int_wrapper/u_integration_peripherals/u_trng/rosc_i/u_entropy/out_s0/Q </td>
+</tr>
+<tr>
+<td>n344_6</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_s2/F </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>8.000</td>
+<td>125.0</td>
+<td>0.000</td>
+<td>4.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>8.000</td>
+<td>125.0</td>
+<td>0.000</td>
+<td>4.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.0</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>24.000</td>
+<td>41.7</td>
+<td>0.000</td>
+<td>12.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_1/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>33.333</td>
+<td>30.0</td>
+<td>0.000</td>
+<td>16.667</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>33.333</td>
+<td>30.0</td>
+<td>0.000</td>
+<td>16.667</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>333.333</td>
+<td>3.0</td>
+<td>0.000</td>
+<td>166.667</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>100.000</td>
+<td>10.0</td>
+<td>0.000</td>
+<td>50.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>u_Gowin_rPLL_2/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>your_instance_name/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>your_instance_name/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>your_instance_name/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>your_instance_name/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>your_instance_name/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>20.000</td>
+<td>50.0</td>
+<td>0.000</td>
+<td>10.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>your_instance_name/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>your_instance_name/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>30.000</td>
+<td>33.3</td>
+<td>0.000</td>
+<td>15.000</td>
+<td>HCLK_ibuf/I</td>
+<td>HCLK</td>
+<td>your_instance_name/rpll_inst/CLKOUTD3 </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>No.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+<td>100.0(MHz)</td>
+<td>82.5(MHz)</td>
+<td>19</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>JTAG_9</td>
+<td>100.0(MHz)</td>
+<td>146.9(MHz)</td>
+<td>10</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_Gowin_EMPU_M1_Top/RTCSRCCLK_ibuf/I</td>
+<td>100.0(MHz)</td>
+<td>191.9(MHz)</td>
+<td>8</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/SD_SPICLK_ibuf/I</td>
+<td>100.0(MHz)</td>
+<td>135.5(MHz)</td>
+<td>10</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RGMII_RXC</td>
+<td>100.0(MHz)</td>
+<td>135.3(MHz)</td>
+<td>10</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>6</td>
+<td>u_Gowin_EMPU_M1_Top/GTX_CLK_ibuf/I</td>
+<td>100.0(MHz)</td>
+<td>128.0(MHz)</td>
+<td>11</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>7</td>
+<td>rtc_1hz_clk_4</td>
+<td>100.0(MHz)</td>
+<td>126.1(MHz)</td>
+<td>12</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>8</td>
+<td>rnd_src_div_8</td>
+<td>100.0(MHz)</td>
+<td>408.2(MHz)</td>
+<td>5</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-5.168</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>10.336</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>5.167</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_0_s2</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>n344_6[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>0.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/CLK</td>
+</tr>
+<tr>
+<td>1.095</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>27</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/Q</td>
+</tr>
+<tr>
+<td>1.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/I1</td>
+</tr>
+<tr>
+<td>1.887</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>7</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/F</td>
+</tr>
+<tr>
+<td>2.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/I1</td>
+</tr>
+<tr>
+<td>2.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/F</td>
+</tr>
+<tr>
+<td>2.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/I3</td>
+</tr>
+<tr>
+<td>3.287</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/F</td>
+</tr>
+<tr>
+<td>3.524</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/I0</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.549</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/COUT</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/CIN</td>
+</tr>
+<tr>
+<td>4.543</td>
+<td>0.470</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/SUM</td>
+</tr>
+<tr>
+<td>4.780</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_1_s0/I0</td>
+</tr>
+<tr>
+<td>5.297</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>24</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_1_s0/F</td>
+</tr>
+<tr>
+<td>5.534</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s36/I2</td>
+</tr>
+<tr>
+<td>5.987</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s36/F</td>
+</tr>
+<tr>
+<td>6.224</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s32/I0</td>
+</tr>
+<tr>
+<td>6.327</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s32/O</td>
+</tr>
+<tr>
+<td>6.564</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s30/I0</td>
+</tr>
+<tr>
+<td>6.667</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s30/O</td>
+</tr>
+<tr>
+<td>6.904</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s29/I0</td>
+</tr>
+<tr>
+<td>7.007</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s29/O</td>
+</tr>
+<tr>
+<td>7.244</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s7/I1</td>
+</tr>
+<tr>
+<td>7.799</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s7/F</td>
+</tr>
+<tr>
+<td>8.036</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s3/I1</td>
+</tr>
+<tr>
+<td>8.591</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s3/F</td>
+</tr>
+<tr>
+<td>8.828</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s8/I0</td>
+</tr>
+<tr>
+<td>9.345</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s8/F</td>
+</tr>
+<tr>
+<td>9.582</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n366_s2/I0</td>
+</tr>
+<tr>
+<td>10.099</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n366_s2/F</td>
+</tr>
+<tr>
+<td>10.336</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_0_s2/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>n344_6</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>11</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_s2/F</td>
+</tr>
+<tr>
+<td>5.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_0_s2/CLK</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_0_s2</td>
+</tr>
+<tr>
+<td>5.167</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_0_s2</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.626</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.923, 62.525%; route: 3.318, 35.026%; tC2Q: 0.232, 2.449%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-5.168</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>10.336</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>5.167</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_1_s2</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>n344_6[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>0.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/CLK</td>
+</tr>
+<tr>
+<td>1.095</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>27</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/Q</td>
+</tr>
+<tr>
+<td>1.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/I1</td>
+</tr>
+<tr>
+<td>1.887</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>7</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/F</td>
+</tr>
+<tr>
+<td>2.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/I1</td>
+</tr>
+<tr>
+<td>2.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/F</td>
+</tr>
+<tr>
+<td>2.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/I3</td>
+</tr>
+<tr>
+<td>3.287</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/F</td>
+</tr>
+<tr>
+<td>3.524</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/I0</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.549</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/COUT</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/CIN</td>
+</tr>
+<tr>
+<td>4.543</td>
+<td>0.470</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/SUM</td>
+</tr>
+<tr>
+<td>4.780</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_1_s0/I0</td>
+</tr>
+<tr>
+<td>5.297</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>24</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_1_s0/F</td>
+</tr>
+<tr>
+<td>5.534</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s36/I2</td>
+</tr>
+<tr>
+<td>5.987</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s36/F</td>
+</tr>
+<tr>
+<td>6.224</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s32/I0</td>
+</tr>
+<tr>
+<td>6.327</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s32/O</td>
+</tr>
+<tr>
+<td>6.564</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s30/I0</td>
+</tr>
+<tr>
+<td>6.667</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s30/O</td>
+</tr>
+<tr>
+<td>6.904</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s29/I0</td>
+</tr>
+<tr>
+<td>7.007</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1251_s29/O</td>
+</tr>
+<tr>
+<td>7.244</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s7/I1</td>
+</tr>
+<tr>
+<td>7.799</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s7/F</td>
+</tr>
+<tr>
+<td>8.036</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s3/I1</td>
+</tr>
+<tr>
+<td>8.591</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s3/F</td>
+</tr>
+<tr>
+<td>8.828</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s8/I0</td>
+</tr>
+<tr>
+<td>9.345</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s8/F</td>
+</tr>
+<tr>
+<td>9.582</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s0/I0</td>
+</tr>
+<tr>
+<td>10.099</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n363_s0/F</td>
+</tr>
+<tr>
+<td>10.336</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_1_s2/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>n344_6</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>11</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_s2/F</td>
+</tr>
+<tr>
+<td>5.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_1_s2/CLK</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_1_s2</td>
+</tr>
+<tr>
+<td>5.167</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_1_s2</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.626</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>13</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 5.923, 62.525%; route: 3.318, 35.026%; tC2Q: 0.232, 2.449%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-2.564</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.731</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>5.167</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_2_s2</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>n344_6[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>0.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/CLK</td>
+</tr>
+<tr>
+<td>1.095</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>27</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/Q</td>
+</tr>
+<tr>
+<td>1.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/I1</td>
+</tr>
+<tr>
+<td>1.887</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>7</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/F</td>
+</tr>
+<tr>
+<td>2.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/I1</td>
+</tr>
+<tr>
+<td>2.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/F</td>
+</tr>
+<tr>
+<td>2.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/I3</td>
+</tr>
+<tr>
+<td>3.287</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/F</td>
+</tr>
+<tr>
+<td>3.524</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/I0</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.549</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/COUT</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/CIN</td>
+</tr>
+<tr>
+<td>4.108</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/COUT</td>
+</tr>
+<tr>
+<td>4.108</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1230_s/CIN</td>
+</tr>
+<tr>
+<td>4.578</td>
+<td>0.470</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1230_s/SUM</td>
+</tr>
+<tr>
+<td>4.815</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_2_s0/I0</td>
+</tr>
+<tr>
+<td>5.332</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>28</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_2_s0/F</td>
+</tr>
+<tr>
+<td>5.569</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s16/I2</td>
+</tr>
+<tr>
+<td>6.022</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s16/F</td>
+</tr>
+<tr>
+<td>6.259</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s14/I0</td>
+</tr>
+<tr>
+<td>6.362</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s14/O</td>
+</tr>
+<tr>
+<td>6.599</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s13/I0</td>
+</tr>
+<tr>
+<td>6.702</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1239_s13/O</td>
+</tr>
+<tr>
+<td>6.939</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n361_s1/I1</td>
+</tr>
+<tr>
+<td>7.494</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n361_s1/F</td>
+</tr>
+<tr>
+<td>7.731</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_2_s2/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>n344_6</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>11</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_s2/F</td>
+</tr>
+<tr>
+<td>5.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_2_s2/CLK</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_2_s2</td>
+</tr>
+<tr>
+<td>5.167</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_2_s2</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.626</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.266, 62.115%; route: 2.370, 34.507%; tC2Q: 0.232, 3.378%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-2.564</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>7.731</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>5.167</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_3_s2</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>n344_6[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>0.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/CLK</td>
+</tr>
+<tr>
+<td>1.095</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>27</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_cs_r_2_s0/Q</td>
+</tr>
+<tr>
+<td>1.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/I1</td>
+</tr>
+<tr>
+<td>1.887</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>7</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/spi_oe_Z_2_s0/F</td>
+</tr>
+<tr>
+<td>2.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/I1</td>
+</tr>
+<tr>
+<td>2.679</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>5</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_3_s6/F</td>
+</tr>
+<tr>
+<td>2.916</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/I3</td>
+</tr>
+<tr>
+<td>3.287</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_word_len_0_s5/F</td>
+</tr>
+<tr>
+<td>3.524</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/I0</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.549</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1232_s/COUT</td>
+</tr>
+<tr>
+<td>4.073</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/CIN</td>
+</tr>
+<tr>
+<td>4.108</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1231_s/COUT</td>
+</tr>
+<tr>
+<td>4.108</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1230_s/CIN</td>
+</tr>
+<tr>
+<td>4.578</td>
+<td>0.470</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1230_s/SUM</td>
+</tr>
+<tr>
+<td>4.815</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_2_s0/I0</td>
+</tr>
+<tr>
+<td>5.332</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>28</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/tx_ptr_2_s0/F</td>
+</tr>
+<tr>
+<td>5.569</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s16/I2</td>
+</tr>
+<tr>
+<td>6.022</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s16/F</td>
+</tr>
+<tr>
+<td>6.259</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s14/I0</td>
+</tr>
+<tr>
+<td>6.362</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s14/O</td>
+</tr>
+<tr>
+<td>6.599</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s13/I0</td>
+</tr>
+<tr>
+<td>6.702</td>
+<td>0.103</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n1238_s13/O</td>
+</tr>
+<tr>
+<td>6.939</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n360_s1/I1</td>
+</tr>
+<tr>
+<td>7.494</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n360_s1/F</td>
+</tr>
+<tr>
+<td>7.731</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_3_s2/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>n344_6</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>FF</td>
+<td>11</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/n344_s2/F</td>
+</tr>
+<tr>
+<td>5.237</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_3_s2/CLK</td>
+</tr>
+<tr>
+<td>5.202</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_3_s2</td>
+</tr>
+<tr>
+<td>5.167</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_spiif/spi_out_slv_r_3_s2</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>-0.626</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 4.266, 62.115%; route: 2.370, 34.507%; tC2Q: 0.232, 3.378%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-2.115</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>12.943</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>10.828</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/slave_cmd_1_s1</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_0_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>0.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/slave_cmd_1_s1/CLK</td>
+</tr>
+<tr>
+<td>1.095</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>11</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/slave_cmd_1_s1/Q</td>
+</tr>
+<tr>
+<td>1.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s3/I1</td>
+</tr>
+<tr>
+<td>1.887</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s3/F</td>
+</tr>
+<tr>
+<td>2.124</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s2/I0</td>
+</tr>
+<tr>
+<td>2.641</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>17</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s2/F</td>
+</tr>
+<tr>
+<td>2.878</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s1/I2</td>
+</tr>
+<tr>
+<td>3.331</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/arb_wr_num_0_s1/F</td>
+</tr>
+<tr>
+<td>3.568</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n388_s0/I1</td>
+</tr>
+<tr>
+<td>4.138</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n388_s0/COUT</td>
+</tr>
+<tr>
+<td>4.138</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n389_s0/CIN</td>
+</tr>
+<tr>
+<td>4.173</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n389_s0/COUT</td>
+</tr>
+<tr>
+<td>4.173</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n390_s0/CIN</td>
+</tr>
+<tr>
+<td>4.208</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n390_s0/COUT</td>
+</tr>
+<tr>
+<td>4.208</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n391_s0/CIN</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n391_s0/COUT</td>
+</tr>
+<tr>
+<td>4.243</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n392_s0/CIN</td>
+</tr>
+<tr>
+<td>4.278</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n392_s0/COUT</td>
+</tr>
+<tr>
+<td>4.278</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n393_s0/CIN</td>
+</tr>
+<tr>
+<td>4.314</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n393_s0/COUT</td>
+</tr>
+<tr>
+<td>4.314</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n394_s0/CIN</td>
+</tr>
+<tr>
+<td>4.349</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n394_s0/COUT</td>
+</tr>
+<tr>
+<td>4.349</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n395_s0/CIN</td>
+</tr>
+<tr>
+<td>4.384</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n395_s0/COUT</td>
+</tr>
+<tr>
+<td>4.384</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n396_s0/CIN</td>
+</tr>
+<tr>
+<td>4.419</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>4</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n396_s0/COUT</td>
+</tr>
+<tr>
+<td>4.656</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s16/I0</td>
+</tr>
+<tr>
+<td>5.173</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s16/F</td>
+</tr>
+<tr>
+<td>5.410</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n583_s8/I1</td>
+</tr>
+<tr>
+<td>5.965</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n583_s8/F</td>
+</tr>
+<tr>
+<td>6.202</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_3_s7/I1</td>
+</tr>
+<tr>
+<td>6.757</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_3_s7/F</td>
+</tr>
+<tr>
+<td>6.994</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_3_s3/I0</td>
+</tr>
+<tr>
+<td>7.511</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>3</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_3_s3/F</td>
+</tr>
+<tr>
+<td>7.748</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s9/I1</td>
+</tr>
+<tr>
+<td>8.303</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s9/F</td>
+</tr>
+<tr>
+<td>8.540</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s3/I1</td>
+</tr>
+<tr>
+<td>9.095</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s3/F</td>
+</tr>
+<tr>
+<td>9.332</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s1/I2</td>
+</tr>
+<tr>
+<td>9.785</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>26</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/ctrl_ns_0_s1/F</td>
+</tr>
+<tr>
+<td>10.022</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n9_s0/I1</td>
+</tr>
+<tr>
+<td>10.592</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n9_s0/COUT</td>
+</tr>
+<tr>
+<td>10.592</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n10_s0/CIN</td>
+</tr>
+<tr>
+<td>10.627</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n10_s0/COUT</td>
+</tr>
+<tr>
+<td>10.627</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n11_s0/CIN</td>
+</tr>
+<tr>
+<td>10.663</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n11_s0/COUT</td>
+</tr>
+<tr>
+<td>10.663</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n12_s0/CIN</td>
+</tr>
+<tr>
+<td>10.698</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>9</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n12_s0/COUT</td>
+</tr>
+<tr>
+<td>10.935</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s11/I3</td>
+</tr>
+<tr>
+<td>11.306</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s11/F</td>
+</tr>
+<tr>
+<td>11.543</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s6/I3</td>
+</tr>
+<tr>
+<td>11.914</td>
+<td>0.371</td>
+<td>tINS</td>
+<td>FF</td>
+<td>10</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_8_s6/F</td>
+</tr>
+<tr>
+<td>12.151</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n497_s1/I1</td>
+</tr>
+<tr>
+<td>12.706</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/n497_s1/F</td>
+</tr>
+<tr>
+<td>12.943</td>
+<td>0.237</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_0_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/I</td>
+</tr>
+<tr>
+<td>10.682</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5460</td>
+<td>u_Gowin_EMPU_M1_Top/HCLK_ibuf/O</td>
+</tr>
+<tr>
+<td>10.863</td>
+<td>0.180</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_0_s1/CLK</td>
+</tr>
+<tr>
+<td>10.828</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_Gowin_EMPU_M1_Top/u_GowinCM1AhbExtWrapper/u_GowinCM1AhbExt/u_spi1/u_spi_ctrl/data_cnt_r_0_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>19</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 8.056, 66.690%; route: 3.792, 31.390%; tC2Q: 0.232, 1.920%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.683, 79.130%; route: 0.180, 20.870%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

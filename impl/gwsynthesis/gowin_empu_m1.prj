@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\ahb_multiple.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\apb2_decoder.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\apb_multiple.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1\gowin_empu_m1.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_empu_m1_template.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll\gowin_rpll_my3.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll_1\gowin_rpll_1.v" type="verilog"/>
+        <File path="D:\gowin_projects\gowin_empu_m1_primer20K\src\gowin_rpll_2\gowin_rpll_2.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\gowin_projects\gowin_empu_m1_primer20K\impl\gwsynthesis\gowin_empu_m1.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="Gowin_EMPU_M1_template"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-2008"/>
+    </OptionList>
+</Project>
